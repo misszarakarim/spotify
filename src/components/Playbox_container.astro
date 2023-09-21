@@ -1,0 +1,20 @@
+---
+import Playbox from "../components/Playbox.astro";
+---
+
+<article>
+  <slot />
+  <div class="playbox_container">
+    <Playbox />
+    <Playbox />
+    <Playbox />
+    <Playbox />
+    <Playbox />
+  </div>
+</article>
+
+<style>
+  article {
+    background: linear-gradient(#1c1b1b, #221f1f, black);
+  }
+</style>
