@@ -3,18 +3,36 @@ import Playbox from "../components/Playbox.astro";
 ---
 
 <article>
-  <slot />
-  <div class="playbox_container">
-    <Playbox />
-    <Playbox />
-    <Playbox />
-    <Playbox />
-    <Playbox />
+    <div class="header_link">
+    <slot name="title" />
+    <a href="#" class="vis-mere-link">Vis Mere</a>
   </div>
+  <div class="playbox_container">
+    <Playbox header="Today's Top Hits" img="https://picsum.photos/id/68/150/150" text="Zach Bryan & Kacey Musgraves are on top of the Hottest 50!" />
+    <Playbox header="RapCaviar" img="https://fastly.picsum.photos/id/331/150/150.jpg?hmac=4Tu4ArIWhVRcD6sL2GzkR3wPx3jBY49MQ0noLaz_X7Q" text="New music from Doja Cat, Lil Tecca and Moneybagg Yo" />
+    <Playbox header="All Out 2010's" img="https://fastly.picsum.photos/id/349/150/150.jpg?hmac=3es0UR9pPaQ7AnMMmdNumCCbw82OJscG8lEKX4iGQpI" text="The biggest songs of the 2010s" />
+    <Playbox header="Rock Classics" img="https://fastly.picsum.photos/id/334/150/150.jpg?hmac=Qvuco0o6vK-124Ocxhg8VwMCEN7otJpxtlPy_BwWjeQ" text="Rock legends & epic songs that continue to inspire generations" />
+    <Playbox header="Chill Hits" img="https://picsum.photos/id/65/150/150" text="Kick back to the best new and recent chill hits" />
 </article>
 
 <style>
   article {
-    background: linear-gradient(#1c1b1b, #221f1f, black);
+    background: linear-gradient(#1F1F1F, #191919, #121212);
   }
+  .header_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute items horizontally */
+    width: 100%; /* Ensure the header takes the full width */*/
+  }
+
+  .vis-mere-link {
+   text-decoration: none;
+    color: rgb(129, 129, 129);
+    margin-right: 2%;
+  }
+
+.vis-mere-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
 </style>

@@ -14,8 +14,8 @@ import Playbox_container from "../components/Playbox_container.astro";
     <title>Astro</title>
   </head>
   <body>
-    <ul></ul>
-    <ul></ul>
-    <Playbox_container><h1>Spotify-playlister</h1></Playbox_container>
+    <Playbox_container>
+      <h1 slot="title">Spotify-playlister</h1>
+    </Playbox_container>
   </body>
 </html>
